@@ -1,0 +1,145 @@
+/* General Styles */
+body {
+    font-family: 'Merriweather', serif; /* Tipografía elegante y profesional */
+    background-color: #F9F8E3; /* Fondo amarillo pastel suave */
+    color: #333; /* Texto oscuro para un buen contraste */
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+/* Encabezado */
+header {
+    background-color: #FFEB3B; /* Amarillo suave para el encabezado */
+    padding: 20px 0;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+}
+
+header .logo img {
+    width: 180px; /* Ajuste el tamaño del logo */
+    margin-bottom: 10px;
+}
+
+header h1 {
+    font-size: 48px;
+    color: #3E2723; /* Color oscuro para el título */
+    font-weight: bold;
+    text-transform: uppercase; /* Título en mayúsculas */
+    letter-spacing: 2px; /* Espaciado entre letras */
+    margin: 0;
+}
+
+/* Menú de Navegación */
+nav {
+    background-color: #FFEB3B; /* Amarillo suave del encabezado */
+    padding: 10px 0;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1); /* Sombra ligera para el menú */
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 5; /* Asegura que el menú esté encima */
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 30px; /* Espacio entre los elementos del menú */
+}
+
+nav ul li {
+    position: relative;
+}
+
+nav a {
+    text-decoration: none;
+    color: #3E2723; /* Texto oscuro para los enlaces */
+    font-size: 18px;
+    font-weight: bold;
+    padding: 10px 15px;
+    border-radius: 5px;
+    display: block;
+    transition: all 0.3s ease; /* Transición suave */
+}
+
+nav a:hover {
+    background-color: #FF9800; /* Amarillo más fuerte al pasar el ratón */
+    color: #fff; /* Texto blanco en hover */
+    transform: translateY(-3px); /* Efecto de desplazamiento */
+}
+
+nav ul li a img {
+    width: 100%;
+    max-width: 200px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    transition: transform 0.3s ease; /* Transición suave para la imagen */
+}
+
+nav ul li a img:hover {
+    transform: scale(1.05); /* Aumento de la imagen al pasar el ratón */
+}
+
+/* Contenedor principal */
+.container {
+    width: 85%;
+    margin: 30px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1); /* Sombra para crear profundidad */
+}
+
+h2 {
+    font-size: 32px;
+    color: #3E2723;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.container p {
+    font-size: 18px;
+    color: #555; /* Color gris oscuro para el texto */
+    text-align: center;
+    line-height: 1.8;
+}
+
+.container img {
+    max-width: 100%;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+/* Footer */
+footer {
+    background-color: #FF9800; /* Naranja para el footer */
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    font-size: 16px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    header h1 {
+        font-size: 36px; /* Reducción de tamaño en dispositivos móviles */
+    }
+
+    .container {
+        width: 90%; /* Ajuste de ancho en dispositivos pequeños */
+    }
+
+    nav ul li {
+        margin-bottom: 15px;
+    }
+}
